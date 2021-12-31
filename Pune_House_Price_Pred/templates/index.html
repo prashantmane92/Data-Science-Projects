@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Species Prediction</title>
+</head>
+<body style="background-color: mediumspringgreen;">
+    <form method = "post" action = "/pred">
+        <label>Total sq-ft</label>
+        <input type = "text" name = "total_sqft">
+        <br>
+        <br>
+        <label>Availability (In months)</label>
+        <input type = "text" name = "availability">
+        <br>
+        <br>
+        <label>No of Bathrooms</label>
+        <input type = "text" name = "bath">
+        <br>
+        <br>
+        <label>Balcony</label>
+        <input type = "text" name = "balcony">
+        <br>
+        <br>
+        <label>Bedrooms</label>
+        <input type = "text" name = "Bedrooms">
+        <br>
+        <br>
+        <label>area_type</label>
+        <input type = "text" name = "area_type">
+        <br>
+        <br>
+        <label>site_location</label>
+        <input type = "text" name = "site_location">
+        <input type = "submit" value = "Predict Price">
+        <br>
+        <br>
+    </form>
+    {{result}}
+</body>
+</html>
